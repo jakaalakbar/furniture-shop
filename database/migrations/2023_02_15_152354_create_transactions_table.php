@@ -21,7 +21,7 @@ class CreateTransactionsTable extends Migration
             $table->text('address')->nullable();
             $table->string('phone')->nullable();
             $table->string('courier')->nullable();
-            $table->string('payment')->default('MISTRANS');
+            $table->string('payment')->default('MITRANS');
             $table->string('payment_url');
             $table->bigInteger('total_price')->default(0);
             $table->string('status')->default('PENDING');
